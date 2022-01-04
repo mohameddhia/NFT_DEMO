@@ -7,6 +7,12 @@ FORKED_LOCAL_ENVIRONMENTS = ["mainnet-fork-dev", "mainnet-fork"]
 
 OPENSEA_URL = "https://testnets.opensea.io/assets/{}/{}"
 
+BREED_MAPPING = {0: "PUG", 1: "SHIBA_INU", 2: "ST_BERNARD"}
+
+
+def get_breed(breed_number):
+    return BREED_MAPPING[breed_number]
+
 
 def get_account(index=None, id=None):
     if (
@@ -83,5 +89,5 @@ def fund_with_link(
     # link_token_contract = interface.LinkTokenInterface(link_token.address)
     # tx = link_token_contract.transfer(contract_address, amount, {"from": account})
     tx.wait(1)
-    print("funded contract")
+    print(f"funded contract{contract_address}")
     return tx
