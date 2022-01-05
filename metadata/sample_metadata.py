@@ -1,6 +1,6 @@
 metadata_template = {
     "name": "",
-    "description":"",
+    "description": "",
     "image": "",
-    "attributes": [""]
+    "attributes": [{"trail_type": "cuteness", "value": 100}],
 }
