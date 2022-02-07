@@ -23,3 +23,4 @@ def test_can_create_advanced_collectible_integration():
 
     # Assert
     assert advanced_collectible.tokenCounter() > 0
+ 
